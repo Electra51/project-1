@@ -1,7 +1,9 @@
 .customer-reviews {
   position: relative;
-  padding: 100px 140px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 100px 60px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
 }
 

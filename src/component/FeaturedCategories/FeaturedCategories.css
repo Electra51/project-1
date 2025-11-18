@@ -1,6 +1,8 @@
 .featured-categories {
   padding: 100px 140px;
-  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
@@ -242,7 +244,6 @@
   transform: translateX(5px);
 }
 
-/* Tablet Responsiveness */
 @media (max-width: 1024px) {
   .featured-categories {
     padding: 80px 60px;
@@ -266,7 +267,6 @@
   }
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .featured-categories {
     padding: 60px 20px;
@@ -297,14 +297,12 @@
     font-size: 14px;
   }
 
-  /* Always show button on mobile */
   .category-btn {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .featured-categories {
     padding: 50px 15px;

@@ -78,7 +78,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+
+  max-width: 1400px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .banner-left {

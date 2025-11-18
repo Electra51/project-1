@@ -163,6 +163,7 @@
   position: relative;
   height: 600px;
   animation: fadeInRight 1s ease-out;
+  perspective: 1000px;
 }
 
 .image-backdrop {
@@ -170,26 +171,37 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(255, 165, 0, 0.15),
-    rgba(138, 43, 226, 0.15)
+    rgba(255, 165, 0, 0.2),
+    rgba(138, 43, 226, 0.2)
   );
   border-radius: 30px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(240, 248, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(240, 248, 255, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: translateZ(0);
 }
 
 .floating-card {
   position: absolute;
-  background: rgba(26, 26, 36, 0.9);
+  background: rgba(26, 26, 36, 0.95);
   backdrop-filter: blur(20px);
   padding: 20px 24px;
-  border-radius: 16px;
-  border: 1px solid rgba(240, 248, 255, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(240, 248, 255, 0.15);
   display: flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  animation: float 4s ease-in-out infinite;
+  z-index: 10;
+  transform: translateZ(50px);
+  transition: all 0.3s ease;
+}
+
+.floating-card:hover {
+  transform: translateZ(50px) translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 165, 0, 0.3);
 }
 
 .card-icon {
@@ -251,6 +263,24 @@
   border-bottom: 2px solid rgba(240, 248, 255, 0.6);
   transform: rotate(45deg);
   animation: bounce 2s ease-in-out infinite;
+}
+
+.hero-mockup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg) scale(1.1);
+  width: 85%;
+  height: auto;
+  max-height: 90%;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.5));
+  transition: transform 0.5s ease;
+}
+
+.hero-mockup:hover {
+  transform: translate(-50%, -50%) rotate(-5deg) scale(1.15);
 }
 
 /* Animations */

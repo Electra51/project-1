@@ -10,7 +10,8 @@ const FeaturedCategories = () => {
       image:
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
       category: "Men's Sneaker",
-      bgColor: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      bgColor:
+        "linear-gradient(135deg, rgb(102 126 234 / 18%) 0%, rgb(118 75 162 / 70%) 100%)",
     },
     {
       id: 2,
@@ -19,7 +20,8 @@ const FeaturedCategories = () => {
       image:
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b513f2cec8b440978d60ab6d014ad452_9366/Response_3MC_ADV_Boots_Black_EG9391_01_standard.jpg",
       category: "Men's Boot",
-      bgColor: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      bgColor:
+        "linear-gradient(135deg, rgb(240 147 251 / 17%) 0%, rgb(164 43 59 / 44%) 100%)",
     },
     {
       id: 3,
@@ -28,44 +30,48 @@ const FeaturedCategories = () => {
       image:
         "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/c3981523051c4a978674ad3c01015664_9366/Dispatch_Trucker_Hat_Black_EY5534_01_standard.jpg",
       category: "Cap",
-      bgColor: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      bgColor:
+        "linear-gradient(135deg, rgb(79 172 254 / 49%) 0%, rgb(0 242 254 / 0%) 100%)",
     },
     {
       id: 4,
       name: "Backpacks",
       count: "90+ Products",
       image:
-        "https://m.media-amazon.com/images/I/81gQpI50MSL._AC_UL480_FMwebp_QL65_.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/d6ee0177281f42f0a254acb1016aa051_9366/Defender_Backpack_Red_EX7011_01_standard.jpg",
       category: "Backpack",
-      bgColor: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+      bgColor:
+        "linear-gradient(135deg, rgb(250 112 154 / 25%) 0%, rgb(254 225 64 / 30%) 100%)",
     },
+
     {
       id: 5,
-      name: "Women's Shoes",
+      name: "Earphones",
       count: "200+ Products",
       image:
-        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c21a73451f964108b69aaf4a00db25e9_9366/Supernova_Rise_Shoes_Black_HP9716_01_standard.jpg",
-      category: "Women's Sneaker",
-      bgColor: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/b322cdef8e654551ace9adcc00f963ed_9366/adidas_Z.N.E._01_ANC_True_Wireless_Earbuds_Grey_EY5114_41_detail.jpg",
+      category: "Earphones",
+      bgColor:
+        "linear-gradient(135deg, rgb(168 237 234 / 22%) 0%, rgb(254 214 227 / 26%) 70%)",
     },
     {
       id: 6,
-      name: "Accessories",
+      name: "Bottle",
       count: "100+ Products",
       image:
-        "https://m.media-amazon.com/images/I/61ETngGe5cL._AC_UL480_FMwebp_QL65_.jpg",
-      category: "Accessories",
-      bgColor: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/a9c04ca9fa51408faf2fac8e0117abb9_9366/Steel_Metal_Bottle_1L_Black_EX7288_01_standard.jpg",
+      category: "Bottle",
+      bgColor:
+        "linear-gradient(135deg, rgb(255 236 210 / 26%) 0%, rgb(252 182 159 / 41%) 100%)",
     },
   ];
 
   const handleCategoryClick = (category) => {
-    // Scroll to shop section and filter by category
     const shopSection = document.querySelector(".products-container");
     if (shopSection) {
       shopSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    // You can add filtering logic here or pass it to parent component
+
     console.log("Selected category:", category);
   };
 

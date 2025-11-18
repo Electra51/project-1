@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import logo from "../../images/Logo.svg";
 const Footer = () => {
   return (
     <div>
@@ -11,7 +12,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="footer-column">
               <div className="footer-logo">
-                <h3>EmaJohn</h3>
+                <img src={logo} alt="Ema-John Logo" className="logo" />
               </div>
               <p className="footer-description">
                 Your trusted online shopping destination for quality products at
